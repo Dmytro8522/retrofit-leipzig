@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru" data-lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>retrofit.leipzig</title>
+<meta name="description" content="">
+<link rel="icon" type="image/svg+xml" href="icon-mono-black.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="brand">
+      <img src="icon-mono-white.svg" alt="retrofit.leipzig" class="brand-mark">
+      <span class="brand-name">retrofit<span class="brand-dot">.</span>leipzig</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#services" data-nav="services"></a>
+      <a href="#sound" data-nav="sound"></a>
+      <a href="#electronics" data-nav="electronics"></a>
+      <a href="#selector" data-nav="selector"></a>
+      <a href="#expertise" data-nav="expertise"></a>
+      <a href="#faq" data-nav="faq"></a>
+      <a href="#contacts" data-nav="contacts"></a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" id="langSwitch">
+        <button type="button" data-lang-btn="ru">RU</button>
+        <button type="button" data-lang-btn="de">DE</button>
+      </div>
+      <a class="btn btn-primary btn-sm header-cta" id="headerCta" href="#" target="_blank" rel="noopener"></a>
+      <button class="burger" id="burgerBtn" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="top"></div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-bars">
+      <span class="bar b1"></span>
+      <span class="bar b2"></span>
+      <span class="bar b3"></span>
+      <span class="bar b4 accent"></span>
+    </div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="container hero-inner">
+    <p class="eyebrow" id="heroEyebrow"></p>
+    <h1 class="hero-title" id="heroTitle"></h1>
+    <p class="hero-subtitle" id="heroSubtitle"></p>
+
+    <div class="hero-ctas">
+      <a class="btn btn-primary" id="heroCtaPrimary" href="#" target="_blank" rel="noopener"></a>
+      <a class="btn btn-ghost" id="heroCtaSecondary" href="#"></a>
+      <a class="btn btn-link" id="heroCtaThird" href="#services"></a>
+    </div>
+
+    <div class="hero-badges" id="heroBadges"></div>
+  </div>
+
+  <div class="pillars-strip" id="pillarsStrip"></div>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="stats-band">
+  <div class="container stats-grid" id="statsGrid"></div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="section" id="services">
+  <div class="container">
+    <p class="eyebrow" id="servicesEyebrow"></p>
+    <h2 class="section-title" id="servicesTitle"></h2>
+    <p class="section-lead" id="servicesLead"></p>
+
+    <div class="services-toc" id="servicesToc"></div>
+    <div class="services-detail" id="servicesDetail"></div>
+  </div>
+</section>
+
+<!-- ===== PACKAGES ===== -->
+<section class="section section-alt" id="packages">
+  <div class="container">
+    <p class="eyebrow" id="packagesEyebrow"></p>
+    <h2 class="section-title" id="packagesTitle"></h2>
+    <p class="section-lead" id="packagesLead"></p>
+    <div class="packages-grid" id="packagesGrid"></div>
+  </div>
+</section>
+
+<!-- ===== CAR SELECTOR ===== -->
+<section class="section" id="selector">
+  <div class="container">
+    <p class="eyebrow" id="selectorEyebrow"></p>
+    <h2 class="section-title" id="selectorTitle"></h2>
+    <p class="section-lead" id="selectorLead"></p>
+
+    <div class="car-selector" id="carSelector">
+      <div class="car-selector-controls">
+        <div class="field">
+          <label id="brandLabel" for="brandSelect"></label>
+          <select id="brandSelect"></select>
+        </div>
+        <div class="field">
+          <label id="modelLabel" for="modelSelect"></label>
+          <select id="modelSelect" disabled></select>
+        </div>
+        <div class="field">
+          <label id="yearLabel" for="yearSelect"></label>
+          <select id="yearSelect" disabled></select>
+        </div>
+      </div>
+
+      <div class="car-selector-result" id="carSelectorResult"></div>
+
+      <div class="vin-box" id="vinBox">
+        <p id="vinNote"></p>
+        <a class="btn btn-primary btn-sm" id="vinCta" href="#" target="_blank" rel="noopener"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERTISE / ARTICLES ===== -->
+<section class="section section-alt" id="expertise">
+  <div class="container">
+    <p class="eyebrow" id="expertiseEyebrow"></p>
+    <h2 class="section-title" id="expertiseTitle"></h2>
+    <p class="section-lead" id="expertiseLead"></p>
+    <div class="articles-grid" id="articlesGrid"></div>
+  </div>
+</section>
+
+<!-- ===== MATERIALS (Comformat) ===== -->
+<section class="section materials-section" id="materials">
+  <div class="container">
+    <p class="eyebrow" id="materialsEyebrow"></p>
+    <h2 class="section-title" id="materialsTitle"></h2>
+    <p class="section-lead" id="materialsLead"></p>
+    <div class="materials-layers" id="materialsLayers"></div>
+    <p class="materials-note" id="materialsNote"></p>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section" id="faq">
+  <div class="container">
+    <p class="eyebrow" id="faqEyebrow"></p>
+    <h2 class="section-title" id="faqTitle"></h2>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ===== CONTACTS ===== -->
+<section class="section section-alt contacts-section" id="contacts">
+  <div class="container">
+    <p class="eyebrow" id="contactsEyebrow"></p>
+    <h2 class="section-title" id="contactsTitle"></h2>
+    <p class="section-lead" id="contactsLead"></p>
+
+    <div class="contacts-grid" id="contactsGrid"></div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="#top" class="brand">
+      <img src="icon-mono-white.svg" alt="retrofit.leipzig" class="brand-mark">
+      <span class="brand-name">retrofit<span class="brand-dot">.</span>leipzig</span>
+    </a>
+    <p class="footer-tagline" id="footerTagline"></p>
+    <nav class="footer-nav" id="footerNav">
+      <a href="#services" data-nav="services"></a>
+      <a href="#selector" data-nav="selector"></a>
+      <a href="#expertise" data-nav="expertise"></a>
+      <a href="#contacts" data-nav="contacts"></a>
+    </nav>
+    <div class="footer-social" id="footerSocial"></div>
+    <p class="footer-bottom">
+      <span id="footerMadeWith"></span> &nbsp;·&nbsp; © <span id="footerYear"></span> retrofit.leipzig. <span id="footerRights"></span>
+    </p>
+  </div>
+</footer>
+
+<!-- ===== MOBILE STICKY CTA ===== -->
+<div class="mobile-cta" id="mobileCta">
+  <a href="tel:" id="mobileCtaCall" class="mobile-cta-btn"></a>
+  <a href="#" target="_blank" rel="noopener" id="mobileCtaTelegram" class="mobile-cta-btn accent"></a>
+</div>
+
+<button class="scroll-top" id="scrollTopBtn" aria-label="scroll top">↑</button>
+
+<script src="js/content.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

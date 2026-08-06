@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- retrofit.leipzig — primary mark: angular ascending blades (headlight streak / level meter), black + red accent -->
+  <g transform="translate(-27,81) rotate(-14 256 175)">
+    <rect x="115" y="230" width="54" height="110" fill="#141414"/>
+    <rect x="191" y="150" width="54" height="190" fill="#141414"/>
+    <rect x="267" y="70"  width="54" height="270" fill="#141414"/>
+    <rect x="343" y="10"  width="54" height="330" fill="#D6001C"/>
+  </g>
+</svg>
