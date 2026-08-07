@@ -20,12 +20,12 @@ const SITE_CONTENT = {
     langSwitch: { ru: "RU", de: "DE" },
     hero: {
       eyebrow: "OEM+ Retrofit · Автозвук · Кодирование · Лейпциг",
-      title: "Дооснащаю автомобиль так,\nкак будто это сделали на заводе.\nТолько лучше.",
-      subtitle: "Retrofit мультимедиа, камер и комфорт-опций, премиальный автозвук и кодирование скрытых функций для BMW, Volkswagen / Audi / Škoda / SEAT, Mercedes-Benz и Ford. Разбираюсь в деталях платформы конкретного автомобиля, а не работаю по одному шаблону для всех.",
+      title: "В каждом автомобиле есть\nпотенциал для улучшений",
+      subtitle: "Работаем с тем, что уже есть: аккуратно добавляем нужные функции и доводим оснащение до комфортного уровня.",
       ctaPrimary: "Написать в Telegram",
       ctaSecondary: "Позвонить",
       ctaThird: "Смотреть услуги",
-      badges: ["7 направлений работ", "BMW · VAG · Mercedes-Benz · Ford", "Материалы Comformat", "Индивидуальный подход, без конвейера"],
+      badges: ["Подбор решений по VIN и текущей комплектации", "Аккуратная интеграция в штатные системы автомобиля", "Понятный план работ, сроки и результат"],
       pillars: [
         { title: "Дооснащение", note: "мультимедиа, камеры, свет, комфорт" },
         { title: "Автозвук", note: "от динамиков до DSP" },
@@ -510,12 +510,12 @@ const SITE_CONTENT = {
     langSwitch: { ru: "RU", de: "DE" },
     hero: {
       eyebrow: "OEM+ Retrofit · Car-HiFi · Codierung · Leipzig",
-      title: "Ich rüste Fahrzeuge so nach,\nals käme es ab Werk.\nNur besser.",
-      subtitle: "Retrofit von Multimedia, Kameras und Komfortfunktionen, Premium Car-HiFi und Codierung versteckter Funktionen für BMW, Volkswagen / Audi / Škoda / SEAT, Mercedes-Benz und Ford. Ich kenne die Plattform Ihres Fahrzeugs im Detail — statt nach Schema F zu arbeiten.",
+      title: "Jedes Fahrzeug hat Potenzial\nfür sinnvolle Upgrades",
+      subtitle: "Wir arbeiten auf Basis der vorhandenen Ausstattung und ergänzen gezielt die Funktionen, die Ihnen im Alltag fehlen.",
       ctaPrimary: "In Telegram schreiben",
       ctaSecondary: "Anrufen",
       ctaThird: "Leistungen ansehen",
-      badges: ["7 Leistungsbereiche", "BMW · VAG · Mercedes-Benz · Ford", "Materialien von Comformat", "Individuell, kein Fließband"],
+      badges: ["Auswahl der Lösungen nach VIN und aktueller Ausstattung", "Saubere Integration in die vorhandenen Fahrzeugsysteme", "Klarer Arbeitsplan, verbindliche Zeiten und transparentes Ergebnis"],
       pillars: [
         { title: "Nachrüstung", note: "Multimedia, Kameras, Licht, Komfort" },
         { title: "Car-HiFi", note: "vom Lautsprecher bis zum DSP" },

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>retrofit.leipzig</title>
 <meta name="description" content="">
-<link rel="icon" type="image/svg+xml" href="icon-mono-black.svg">
+<link rel="icon" type="image/svg+xml" href="avatar-instagram.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -16,7 +16,7 @@
 <header class="site-header" id="siteHeader">
   <div class="container header-inner">
     <a href="#top" class="brand">
-      <img src="icon-mono-white.svg" alt="retrofit.leipzig" class="brand-mark">
+      <img src="avatar-instagram.svg" alt="retrofit.leipzig" class="brand-mark">
       <span class="brand-name">retrofit<span class="brand-dot">.</span>leipzig</span>
     </a>
 
@@ -57,17 +57,37 @@
     <div class="hero-grid"></div>
   </div>
   <div class="container hero-inner">
-    <p class="eyebrow" id="heroEyebrow"></p>
-    <h1 class="hero-title" id="heroTitle"></h1>
-    <p class="hero-subtitle" id="heroSubtitle"></p>
+    <div class="hero-copy">
+      <p class="eyebrow" id="heroEyebrow"></p>
+      <h1 class="hero-title" id="heroTitle"></h1>
+      <p class="hero-subtitle" id="heroSubtitle"></p>
+      <div class="hero-badges" id="heroBadges"></div>
 
-    <div class="hero-ctas">
-      <a class="btn btn-primary" id="heroCtaPrimary" href="#" target="_blank" rel="noopener"></a>
-      <a class="btn btn-ghost" id="heroCtaSecondary" href="#"></a>
-      <a class="btn btn-link" id="heroCtaThird" href="#services"></a>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" id="heroCtaPrimary" href="#" target="_blank" rel="noopener"></a>
+        <a class="btn btn-ghost" id="heroCtaSecondary" href="#"></a>
+        <a class="btn btn-link" id="heroCtaThird" href="#services"></a>
+      </div>
     </div>
 
-    <div class="hero-badges" id="heroBadges"></div>
+    <div class="hero-visual" id="heroScanner" aria-label="Before and after retrofit visualization">
+      <div class="hero-car-frame">
+        <div class="hero-car hero-car-before" aria-hidden="true"></div>
+        <div class="hero-car hero-car-after" aria-hidden="true"></div>
+        <div class="scan-divider" aria-hidden="true">
+          <span class="scan-handle"></span>
+          <span class="scan-line"></span>
+        </div>
+        <span class="scan-tag scan-before">Vorher</span>
+        <span class="scan-tag scan-after">Nachher</span>
+      </div>
+      <div class="scan-labels" aria-hidden="true">
+        <span class="scan-label" data-scan-label="0">Licht</span>
+        <span class="scan-label" data-scan-label="1">Assistenz</span>
+        <span class="scan-label" data-scan-label="2">Audio</span>
+        <span class="scan-label" data-scan-label="3">Komfort</span>
+      </div>
+    </div>
   </div>
 
   <div class="pillars-strip" id="pillarsStrip"></div>
@@ -178,7 +198,7 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <a href="#top" class="brand">
-      <img src="icon-mono-white.svg" alt="retrofit.leipzig" class="brand-mark">
+      <img src="avatar-instagram.svg" alt="retrofit.leipzig" class="brand-mark">
       <span class="brand-name">retrofit<span class="brand-dot">.</span>leipzig</span>
     </a>
     <p class="footer-tagline" id="footerTagline"></p>
