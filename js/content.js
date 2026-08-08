@@ -20,7 +20,7 @@ const SITE_CONTENT = {
       eyebrow: "Retrofit · Car Audio · Ambient Light · Leipzig",
       title: "Профессиональный Retrofit, Автозвук и Ambient Light\nв Лейпциге и регионе",
       subtitle: "Индивидуальное дооснащение авто, штатные мультимедийные опции, контурное освещение и качественный звук. Лично гарантирую аккуратный монтаж без повреждения салона.",
-      ctaPrimary: "Узнать стоимость в Telegram / WhatsApp",
+      ctaPrimary: "Написать в Telegram",
       ctaSecondary: "Услуги",
       badges: [
         "Лично выполняю монтаж и контроль качества",
@@ -153,20 +153,19 @@ const SITE_CONTENT = {
       },
       {
         q: "Как узнать цену?",
-        a: "Напишите мне в Telegram или WhatsApp и укажите модель, год и желаемые опции. Я дам ориентир по стоимости и объясню, что лучше сделать в вашем случае."
+        a: "Напишите мне в Telegram и укажите модель, год и желаемые опции. Я дам ориентир по стоимости и объясню, что лучше сделать в вашем случае."
       }
     ],
     contacts: {
       phoneLabel: "Телефон",
       telegramLabel: "Telegram",
-      whatsappLabel: "WhatsApp",
       instagramLabel: "Instagram",
       city: "Лейпциг и регион",
       cityLabel: "Где я работаю",
       ctaTelegram: "Написать мне в Telegram",
       ctaCall: "Позвонить",
       ctaInstagram: "Instagram",
-      note: "Обычно отвечаю в течение дня. Самый быстрый способ связаться со мной: Telegram или WhatsApp."
+      note: "Обычно отвечаю в течение дня. Самый быстрый способ связаться со мной: Telegram."
     },
     footer: {
       tagline: "Частный мастер по retrofit, автозвуку и автомобильной электронике. Лейпциг.",
@@ -196,7 +195,7 @@ const SITE_CONTENT = {
       eyebrow: "Retrofit · Car Audio · Ambient Light · Leipzig",
       title: "Professionelles Retrofit, Car-HiFi und Ambient Light\nin Leipzig und Umgebung",
       subtitle: "Individuelle Fahrzeug-Nachrüstung, OEM-Multimedia, Ambientebeleuchtung und sauberer Klang. Ich garantiere persönlich eine sorgfältige Montage ohne Schäden am Innenraum.",
-      ctaPrimary: "Preis in Telegram / WhatsApp anfragen",
+      ctaPrimary: "In Telegram schreiben",
       ctaSecondary: "Leistungen",
       badges: [
         "Ich führe Einbau und Qualitätskontrolle selbst durch",
@@ -329,20 +328,19 @@ const SITE_CONTENT = {
       },
       {
         q: "Wie erfahre ich den Preis?",
-        a: "Schreiben Sie mir in Telegram oder WhatsApp mit Modell, Baujahr und gewünschter Ausstattung. Ich gebe Ihnen einen realistischen Preisrahmen und eine klare Empfehlung."
+        a: "Schreiben Sie mir in Telegram mit Modell, Baujahr und gewünschter Ausstattung. Ich gebe Ihnen einen realistischen Preisrahmen und eine klare Empfehlung."
       }
     ],
     contacts: {
       phoneLabel: "Telefon",
       telegramLabel: "Telegram",
-      whatsappLabel: "WhatsApp",
       instagramLabel: "Instagram",
       city: "Leipzig und Umgebung",
       cityLabel: "Einsatzgebiet",
       ctaTelegram: "Mir in Telegram schreiben",
       ctaCall: "Anrufen",
       ctaInstagram: "Instagram",
-      note: "Ich antworte in der Regel am selben Tag. Am schnellsten erreichen Sie mich über Telegram oder WhatsApp."
+      note: "Ich antworte in der Regel am selben Tag. Am schnellsten erreichen Sie mich über Telegram."
     },
     footer: {
       tagline: "Privater Spezialist für Retrofit, Car-HiFi und Fahrzeugelektronik in Leipzig.",
