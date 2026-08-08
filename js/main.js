@@ -12,12 +12,14 @@
     instagramUser: "retrofit.leipzig"
   };
   CONTACT.telegramUrl = "https://t.me/" + CONTACT.telegramUser;
+  CONTACT.whatsAppUrl = "https://wa.me/" + CONTACT.phoneRaw.replace(/\D/g, "");
   CONTACT.instagramUrl = "https://instagram.com/" + CONTACT.instagramUser;
   CONTACT.telUrl = "tel:" + CONTACT.phoneRaw;
 
   var ICONS = {
     phone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8Z"/></svg>',
     telegram: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M21 4 3 11.3l6 2.1M21 4l-3.2 16-6-4.4M21 4 9.4 14.6m0 0-.6 5 3-3.3"/></svg>',
+    whatsapp: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5A8.5 8.5 0 0 1 7.2 18.8L3 20l1.3-4A8.5 8.5 0 1 1 20 11.5Z"/><path d="M8.7 9.2c.2-.4.4-.5.8-.5h.6c.2 0 .4.1.5.4l.8 1.8c.1.3.1.5-.1.7l-.5.6c-.2.2-.2.4-.1.6.4.8 1 1.5 1.8 2 .2.1.4.1.6-.1l.6-.5c.2-.2.4-.2.7-.1l1.8.8c.3.1.4.3.4.5v.6c0 .4-.1.6-.5.8-.4.2-1 .3-1.6.1-2-.5-4.8-3.2-5.3-5.3-.2-.6-.1-1.2.1-1.6Z"/></svg>',
     instagram: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>',
     chevron: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>',
     arrow: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
@@ -27,6 +29,7 @@
     return '<span class="mini-bars" aria-hidden="true"><i></i><i></i><i></i><i class="accent"></i></span>';
   }
 
+  CONTACT.whatsAppUrl = "https://wa.me/" + CONTACT.phoneRaw.replace(/\D/g, "");
   function pad2(n) { return n < 10 ? "0" + n : "" + n; }
 
   var currentLang = localStorage.getItem("rl_lang") ||
@@ -48,7 +51,7 @@
   /* ---------- render: nav ---------- */
   function renderNav() {
     var nav = t().nav;
-    ["services", "sound", "electronics", "selector", "expertise", "faq", "contacts"].forEach(function (key) {
+    ["services", "sound", "electronics", "expertise", "faq", "contacts"].forEach(function (key) {
       var nodes = document.querySelectorAll('[data-nav="' + key + '"]');
       nodes.forEach(function (n) { n.textContent = nav[key]; });
     });
@@ -72,9 +75,7 @@
 
     var s = el("heroCtaSecondary");
     s.textContent = h.ctaSecondary;
-    s.href = CONTACT.telUrl;
-
-    el("heroCtaThird").textContent = h.ctaThird;
+    s.href = "#services";
 
     el("heroBadges").innerHTML = h.badges.map(function (b) {
       return '<span class="badge">' + escapeHtml(b) + "</span>";
@@ -326,6 +327,11 @@
       '<span class="contact-label">' + escapeHtml(c.telegramLabel) + "</span>" +
       '<span class="contact-value">@' + escapeHtml(CONTACT.telegramUser) + "</span>" +
       "</a>" +
+      '<a class="contact-card" href="' + CONTACT.whatsAppUrl + '" target="_blank" rel="noopener">' +
+      '<span class="contact-icon">' + ICONS.whatsapp + "</span>" +
+      '<span class="contact-label">' + escapeHtml(c.whatsappLabel) + "</span>" +
+      '<span class="contact-value">' + escapeHtml(CONTACT.phoneDisplay) + "</span>" +
+      "</a>" +
       '<a class="contact-card" href="' + CONTACT.instagramUrl + '" target="_blank" rel="noopener">' +
       '<span class="contact-icon">' + ICONS.instagram + "</span>" +
       '<span class="contact-label">' + escapeHtml(c.instagramLabel) + "</span>" +
@@ -354,6 +360,7 @@
 
     el("footerSocial").innerHTML =
       '<a href="' + CONTACT.telegramUrl + '" target="_blank" rel="noopener" aria-label="Telegram">' + ICONS.telegram + "</a>" +
+      '<a href="' + CONTACT.whatsAppUrl + '" target="_blank" rel="noopener" aria-label="WhatsApp">' + ICONS.whatsapp + "</a>" +
       '<a href="' + CONTACT.instagramUrl + '" target="_blank" rel="noopener" aria-label="Instagram">' + ICONS.instagram + "</a>" +
       '<a href="' + CONTACT.telUrl + '" aria-label="Phone">' + ICONS.phone + "</a>";
   }
@@ -396,12 +403,8 @@
     renderMeta();
     renderNav();
     renderHero();
-    renderStats();
     renderServices();
-    renderPackages();
-    renderCarSelector();
     renderArticles();
-    renderMaterials();
     renderFaq();
     renderContacts();
     renderFooter();
