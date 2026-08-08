@@ -8,7 +8,7 @@
   var CONTACT = {
     phoneRaw: "+491624514836",
     phoneDisplay: "+49 162 4514836",
-    telegramUser: "retrofit.leipzig",
+    telegramUser: "Dmitryi0678",
     instagramUser: "retrofit.leipzig"
   };
   CONTACT.telegramUrl = "https://t.me/" + CONTACT.telegramUser;
