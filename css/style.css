@@ -448,8 +448,7 @@ a.contact-card:hover{border-color:var(--red);transform:translateY(-3px);}
   .packages-grid{grid-template-columns:1fr;}
   .contacts-grid{grid-template-columns:1fr;}
   .stats-grid{grid-template-columns:1fr;padding:36px 24px;}
-  .pillars-strip{grid-template-columns:1fr;}
-  .pillar-card{border-right:none;border-bottom:1px solid var(--border);}
+  .pillars-strip{display:none;}
   .hero-ctas{flex-direction:column;align-items:stretch;}
   .hero-ctas .btn{width:100%;}
   .header-cta{display:none;}

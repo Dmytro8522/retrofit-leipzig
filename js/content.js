@@ -18,8 +18,8 @@ const SITE_CONTENT = {
     langSwitch: { ru: "RU", de: "DE" },
     hero: {
       eyebrow: "Retrofit · Car Audio · Ambient Light · Leipzig",
-      title: "Профессиональный Retrofit, Автозвук и Ambient Light\nв Лейпциге и регионе",
-      subtitle: "Индивидуальное дооснащение авто, штатные мультимедийные опции, контурное освещение и качественный звук. Лично гарантирую аккуратный монтаж без повреждения салона.",
+      title: "Профессиональное дооснащение автомобилей\nв Лейпциге и регионе",
+      subtitle: "Штатные мультимедийные опции, акустика, электроника и аккуратный монтаж без повреждения салона. Лично гарантирую безопасную и чистую установку.",
       ctaPrimary: "Написать в Telegram",
       ctaSecondary: "Услуги",
       badges: [
@@ -30,7 +30,7 @@ const SITE_CONTENT = {
       pillars: [
         { title: "Retrofit", note: "мультимедиа, камеры, опции" },
         { title: "Автозвук", note: "акустика, сабвуферы, DSP" },
-        { title: "Ambient Light", note: "многоцветная подсветка салона" },
+        { title: "Опции", note: "штатные функции и дооснащение" },
         { title: "Электроника", note: "диагностика и кодирование" }
       ]
     },
@@ -50,7 +50,7 @@ const SITE_CONTENT = {
     services: [
       {
         id: "retrofit",
-        title: "Дооснащение и Ambient Light",
+        title: "Дооснащение и штатные опции",
         tagline: "Аккуратный retrofit с сохранением заводской логики",
         groups: [
           {
@@ -63,7 +63,7 @@ const SITE_CONTENT = {
             ]
           },
           {
-            title: "Ambient Light",
+            title: "Штатные функции",
             items: [
               "Многоцветная контурная подсветка салона",
               "Скрытый монтаж без торчащих проводов",
@@ -132,10 +132,6 @@ const SITE_CONTENT = {
       {
         title: "Как я подключаю оборудование",
         body: "Я сохраняю штатную электрику и по возможности использую схему plug & play: провод в провод, без хаотичных врезок. Все соединения изолирую, кабели укладываю скрыто и фиксирую так, чтобы они не терлись и не шумели в движении."
-      },
-      {
-        title: "Почему ко мне обращаются напрямую",
-        body: "Вы договариваетесь напрямую со мной, а не с менеджером. Я сразу объясняю, что реально сделать на вашем автомобиле, сколько это займет и какой будет результат по факту, без рекламных обещаний."
       }
     ],
     faq: [
@@ -193,8 +189,8 @@ const SITE_CONTENT = {
     langSwitch: { ru: "RU", de: "DE" },
     hero: {
       eyebrow: "Retrofit · Car Audio · Ambient Light · Leipzig",
-      title: "Professionelles Retrofit, Car-HiFi und Ambient Light\nin Leipzig und Umgebung",
-      subtitle: "Individuelle Fahrzeug-Nachrüstung, OEM-Multimedia, Ambientebeleuchtung und sauberer Klang. Ich garantiere persönlich eine sorgfältige Montage ohne Schäden am Innenraum.",
+      title: "Professionelle Fahrzeug-Nachrüstung\nin Leipzig und Umgebung",
+      subtitle: "OEM-Multimedia, Car-HiFi, Elektronik und sorgfältige Montage ohne Schäden am Innenraum. Ich garantiere persönlich eine saubere und sichere Installation.",
       ctaPrimary: "In Telegram schreiben",
       ctaSecondary: "Leistungen",
       badges: [
@@ -205,7 +201,7 @@ const SITE_CONTENT = {
       pillars: [
         { title: "Retrofit", note: "Multimedia, Kameras, Optionen" },
         { title: "Car-HiFi", note: "Lautsprecher, Subwoofer, DSP" },
-        { title: "Ambient Light", note: "mehrfarbige Innenraumbeleuchtung" },
+        { title: "Optionen", note: "OEM-Funktionen und Nachrüstung" },
         { title: "Elektronik", note: "Diagnose und Codierung" }
       ]
     },
@@ -225,7 +221,7 @@ const SITE_CONTENT = {
     services: [
       {
         id: "retrofit",
-        title: "Nachrüstung und Ambient Light",
+        title: "Nachrüstung und Optionen",
         tagline: "Saubere Nachrüstung mit OEM-Logik",
         groups: [
           {
@@ -238,7 +234,7 @@ const SITE_CONTENT = {
             ]
           },
           {
-            title: "Ambient Light",
+            title: "OEM-Funktionen",
             items: [
               "Mehrfarbige konturierte Innenraumbeleuchtung",
               "Verdeckter Einbau ohne sichtbare Kabel",
@@ -307,10 +303,6 @@ const SITE_CONTENT = {
       {
         title: "Wie ich die Elektrik anschließe",
         body: "Ich erhalte die OEM-Elektrik und nutze nach Möglichkeit Plug-and-Play: Leitung zu Leitung, ohne chaotische Einschnitte. Ich isoliere Verbindungen sauber und verlege Kabel verdeckt, damit nichts scheuert oder im Betrieb stört."
-      },
-      {
-        title: "Warum der direkte Kontakt wichtig ist",
-        body: "Sie sprechen direkt mit mir statt mit einem Vermittler. Ich erkläre klar, was an Ihrem Fahrzeug sinnvoll und machbar ist, wie lange es dauert und welches Ergebnis Sie realistisch erwarten können."
       }
     ],
     faq: [
